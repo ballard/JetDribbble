@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-JetDribble-JetDribbleTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-JetDribble.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>18B4B7D72F6BA618788F5B255F8514A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7B92471A2A982E4BE6AE32018BB217D9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8CE2949748ED2A2998C1EA5AE946ED96</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BFFFBC10D628F795DA0DD1C69AD12BFC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
