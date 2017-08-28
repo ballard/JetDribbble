@@ -10,17 +10,15 @@ import UIKit
 
 class DribbbleShotsCollectionViewController: NSObject, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    private var collectionView: UICollectionView!
-    private var currentPage = 1 {
-        didSet {
-            print("current page: \(currentPage)")
-        }
-    }
+    var didRetreiveData: (()->Void)?
+    var didFinishRetreiveData: (()->Void)?
     
-    var shotsData = [Item]() {
+    private var collectionView: UICollectionView!
+    private var currentPage = 1
+    
+    private var shotsData = [Item]() {
         didSet {
             collectionView?.reloadData()
-            print("items count: \(ShotsProvider.getShotsCount())")
         }
     }
     
@@ -37,21 +35,26 @@ class DribbbleShotsCollectionViewController: NSObject, UICollectionViewDelegate,
     
     func updateNetworkData(){
         currentPage = 1
+        didRetreiveData?()
         DribbbleAPI.loadDataForPage(currentPage) { [weak self] shots in
             if shots.count > 0 {
                 ShotsProvider.saveShots(shots) {
                     self?.updateShotsData()
+                    DispatchQueue.main.async {
+                        self?.collectionView?.setContentOffset(CGPoint.zero, animated: true)
+                    }
                 }
             }
             DispatchQueue.main.async {
                 self?.collectionView?.refreshControl?.endRefreshing()
-                self?.collectionView?.setContentOffset(CGPoint.zero, animated: true)
+                self?.didFinishRetreiveData?()
             }
         }
     }
     
     private func loadNextPage() {
         let page = currentPage + 1
+        didRetreiveData?()
         DribbbleAPI.loadDataForPage(page) { [weak self] shots in
             if shots.count > 0 {
                 self?.currentPage += 1
@@ -60,6 +63,9 @@ class DribbbleShotsCollectionViewController: NSObject, UICollectionViewDelegate,
                         self?.updateShotsData()
                     }
                 }
+            }
+            DispatchQueue.main.async {
+                self?.didFinishRetreiveData?()
             }
         }
     }
@@ -97,13 +103,9 @@ class DribbbleShotsCollectionViewController: NSObject, UICollectionViewDelegate,
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        
         let offset = scrollView.contentOffset.x
-        let position = offset / scrollView.frame.width
         let end = scrollView.contentSize.width - scrollView.frame.width
-        print("offset: \(offset) end: \(end) position: \(position)")
         let shotsCount = ShotsProvider.getShotsCount()
-        
         if offset == end && shotsCount < Config.shotsFetchLimit {
             loadNextPage()
         }

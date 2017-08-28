@@ -16,7 +16,7 @@ struct Config {
     static let listParameter = "list=animated"
     static let url = "http://api.dribbble.com/v1/shots?access_token=\(token)&\(sortingParameter)&\(fetchLimitParameter))"
     static let entityName = "Item"
-    static let createdSortDescriptor = "created"
+    static let updatedSortDescriptor = "updatedAt"
     static let cellReuseIdentifier = "ShotCell"
     static let dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
     static let navigationBarHeigth : CGFloat = 44.0

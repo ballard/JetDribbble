@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L44-6D-B8u">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="L44-6D-B8u">
                                 <rect key="frame" x="0.0" y="64" width="375" height="315"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2yT-tA-wuw">
@@ -88,17 +88,24 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Zb2-6g-Auu">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.63921568630000003" green="0.63921568630000003" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KVi-jB-GfW" firstAttribute="top" secondItem="L44-6D-B8u" secondAttribute="bottom" constant="288" id="1hO-T5-1fx"/>
                             <constraint firstItem="L44-6D-B8u" firstAttribute="leading" secondItem="PvX-aa-3fx" secondAttribute="leading" id="G2z-RZ-VEX"/>
                             <constraint firstItem="L44-6D-B8u" firstAttribute="top" secondItem="ytf-HW-5kX" secondAttribute="bottom" id="VRq-Ny-mt6"/>
+                            <constraint firstItem="Zb2-6g-Auu" firstAttribute="centerX" secondItem="PvX-aa-3fx" secondAttribute="centerX" id="bKz-es-WRn"/>
                             <constraint firstAttribute="trailing" secondItem="L44-6D-B8u" secondAttribute="trailing" id="cbc-7k-rop"/>
+                            <constraint firstItem="Zb2-6g-Auu" firstAttribute="centerY" secondItem="PvX-aa-3fx" secondAttribute="centerY" id="dLy-pO-KYZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="JetDribbble" id="lwb-ih-gfB"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="Zb2-6g-Auu" id="Rv4-YF-9Gv"/>
                         <outlet property="collectionView" destination="L44-6D-B8u" id="vHG-6C-iYO"/>
                         <outlet property="collectionViewBottomOffset" destination="1hO-T5-1fx" id="dVb-wu-Wlp"/>
                     </connections>

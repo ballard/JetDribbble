@@ -32,8 +32,8 @@ class Item: NSManagedObject {
         item.details = itemInfo.details
         let formatter = DateFormatter()
         formatter.dateFormat = Config.dateFormat
-        if let date = formatter.date(from: itemInfo.created) as NSDate? {
-            item.created = date
+        if let date = formatter.date(from: itemInfo.updated) as NSDate? {
+            item.updatedAt = date
         }
         item.image = itemInfo.images.hidpi ?? itemInfo.images.normal
         item.animated = itemInfo.animated

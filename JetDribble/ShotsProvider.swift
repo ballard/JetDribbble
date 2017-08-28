@@ -18,7 +18,7 @@ struct ShotsProvider
             let request : NSFetchRequest<Item> = NSFetchRequest(entityName: Config.entityName)
             request.fetchLimit = Config.shotsFetchLimit
             request.predicate = NSPredicate(format: "animated = NO")
-            request.sortDescriptors = [NSSortDescriptor(key: Config.createdSortDescriptor, ascending: false)]
+            request.sortDescriptors = [NSSortDescriptor(key: Config.updatedSortDescriptor, ascending: false)]
             if let fetchedItems = try? context.fetch(request) {
                 items = fetchedItems
             }

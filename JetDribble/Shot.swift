@@ -14,7 +14,7 @@ struct Shot {
     var identifier : Double
     var title : String
     var details : String
-    var created : String
+    var updated : String
     var images : Images
     var animated : Bool
     
@@ -23,7 +23,7 @@ struct Shot {
         identifier = json["id"].doubleValue
         title = json["title"].stringValue
         details = json["description"].stringValue
-        created = json["updated_at"].stringValue
+        updated = json["updated_at"].stringValue
         images = Images.init(json: json["images"].dictionaryObject!)
         animated = json["animated"].boolValue
     }

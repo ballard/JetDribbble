@@ -12,8 +12,7 @@ class JetDribbleViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewBottomOffset: NSLayoutConstraint!
-    
-    private var refreshControl: UIRefreshControl!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     private var collectionViewController: DribbbleShotsCollectionViewController!
 
@@ -22,24 +21,26 @@ class JetDribbleViewController: UIViewController {
         automaticallyAdjustsScrollViewInsets = false
         collectionView?.alwaysBounceVertical = true
         collectionViewController = DribbbleShotsCollectionViewController(collectionView)
+        collectionViewController.didRetreiveData = { [weak self] in
+            self?.activityIndicator?.startAnimating()
+        }
+        
+        collectionViewController.didFinishRetreiveData = { [weak self] in
+            self?.activityIndicator?.stopAnimating()
+        }
         
         collectionViewController.updateShotsData()
         collectionViewController.updateNetworkData()
         
-        // добавляем pull to refresh
-        refreshControl = UIRefreshControl()
-        refreshControl?.attributedTitle = NSAttributedString(string: Config.Strings.refresher)
-        refreshControl?.addTarget(collectionViewController, action: #selector(DribbbleShotsCollectionViewController.updateNetworkData), for: .valueChanged)
+        let refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: Config.Strings.refresher)
+        refreshControl.addTarget(collectionViewController, action: #selector(DribbbleShotsCollectionViewController.updateNetworkData), for: .valueChanged)
         
         if #available(iOS 10.0, *) {
             collectionView?.refreshControl = refreshControl
         } else {
-            if refreshControl != nil {
-                collectionView?.addSubview(refreshControl!)
-            }
+            collectionView?.addSubview(refreshControl)
         }
-        
-        print("\(AppDelegate.persistentContainer.persistentStoreCoordinator.persistentStores.first!.url!)")
         
         // Do any additional setup after loading the view.
     }
