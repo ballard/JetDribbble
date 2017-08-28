@@ -12,9 +12,9 @@ import CoreData
 
 struct DribbbleAPI {
     
-    static func loadData(completion: (([Shot])->Void)?) {
-        
-        let sessionURL = URL(string: Config.url)
+    static func loadDataForPage(_ page: Int, withCompletion completion: (([Shot])->Void)?) {
+        let urlString = Config.url + "&page=\(page)"
+        let sessionURL = URL(string: urlString)
         let session = URLSession(configuration: .default)
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         let task = session.dataTask(with: sessionURL!) { data, response, error in

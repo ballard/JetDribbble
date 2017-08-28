@@ -26,6 +26,19 @@ struct ShotsProvider
         return items
     }
     
+    static func getShotsCount()-> Int {
+        let context = AppDelegate.viewContext
+        var itemsCount = 0
+        context.performAndWait {
+            let request : NSFetchRequest<Item> = NSFetchRequest(entityName: Config.entityName)
+            request.predicate = NSPredicate(format: "animated = NO")
+            if let count = try? context.count(for: request) {
+                itemsCount = count
+            }
+        }
+        return itemsCount
+    }
+    
     static func saveShots(_ shots: [Shot], withCompletion completion: (()->Void)?){
         let container = AppDelegate.persistentContainer
         container.performBackgroundTask{ moc in

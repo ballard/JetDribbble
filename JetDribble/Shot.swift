@@ -23,7 +23,7 @@ struct Shot {
         identifier = json["id"].doubleValue
         title = json["title"].stringValue
         details = json["description"].stringValue
-        created = json["created_at"].stringValue
+        created = json["updated_at"].stringValue
         images = Images.init(json: json["images"].dictionaryObject!)
         animated = json["animated"].boolValue
     }
