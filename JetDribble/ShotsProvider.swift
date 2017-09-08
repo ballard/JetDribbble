@@ -51,4 +51,26 @@ struct ShotsProvider
             }
         }
     }
+    
+    static func flushDatabase() {
+        
+        let context = AppDelegate.viewContext
+        
+        var items = [Item]()
+        
+        context.performAndWait {
+            let request : NSFetchRequest<Item> = NSFetchRequest(entityName: Config.entityName)
+            
+            if let fetchedItems = try? context.fetch(request) {
+                items = fetchedItems
+            }
+            
+            for item in items {
+                context.delete(item)
+            }
+            
+            try? context.save()
+        }
+    }
+    
 }

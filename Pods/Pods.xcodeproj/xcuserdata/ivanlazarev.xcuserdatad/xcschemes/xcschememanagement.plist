@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-JetDribble-ShotsProviderTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JetDribble.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -28,6 +33,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>18B4B7D72F6BA618788F5B255F8514A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>190EFF34F059206094ECEFDDE06AC188</key>
 		<dict>
 			<key>primary</key>
 			<true/>

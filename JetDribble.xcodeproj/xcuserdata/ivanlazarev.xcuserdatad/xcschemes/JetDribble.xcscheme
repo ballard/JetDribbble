@@ -32,9 +32,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1F2291DA1F4F6D8100031991"
-               BuildableName = "JetDribbleTests.xctest"
-               BlueprintName = "JetDribbleTests"
+               BlueprintIdentifier = "1F6ED5981F6091C900C2ABA2"
+               BuildableName = "DribbbleAPITests.xctest"
+               BlueprintName = "DribbbleAPITests"
+               ReferencedContainer = "container:JetDribble.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1F6ED58A1F5F245E00C2ABA2"
+               BuildableName = "ShotsProviderTests.xctest"
+               BlueprintName = "ShotsProviderTests"
                ReferencedContainer = "container:JetDribble.xcodeproj">
             </BuildableReference>
          </TestableReference>

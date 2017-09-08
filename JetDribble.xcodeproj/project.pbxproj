@@ -23,13 +23,32 @@
 		1F2292061F51A42800031991 /* ShotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2292051F51A42800031991 /* ShotCollectionViewCell.swift */; };
 		1F2292091F51C89300031991 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2292081F51C89300031991 /* Extensions.swift */; };
 		1F5CF6541F51EF7C00788331 /* DribbbleShotsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CF6531F51EF7C00788331 /* DribbbleShotsCollectionViewController.swift */; };
+		1F6ED58E1F5F245E00C2ABA2 /* ShotsProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6ED58D1F5F245E00C2ABA2 /* ShotsProviderTests.swift */; };
+		1F6ED59C1F6091C900C2ABA2 /* DribbbleAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6ED59B1F6091C900C2ABA2 /* DribbbleAPITests.swift */; };
+		1F6ED5C51F61CB5C00C2ABA2 /* shots.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F6ED5C41F61CB5C00C2ABA2 /* shots.json */; };
+		1F6ED5C71F61D0B500C2ABA2 /* DHURLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6ED5C61F61D0B500C2ABA2 /* DHURLSessionMock.swift */; };
 		8962F777CD4C14750ECEF7FC /* Pods_JetDribbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7946FE71A09E1E737A116A81 /* Pods_JetDribbleTests.framework */; };
+		98954E717ADD63BB06AD99B9 /* Pods_JetDribble_ShotsProviderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4552235A2C991FBAD6512CA /* Pods_JetDribble_ShotsProviderTests.framework */; };
 		E6D8DEA4A17C992CFC653EEF /* Pods_JetDribble_JetDribbleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A547BB0831385BF792D82F /* Pods_JetDribble_JetDribbleTests.framework */; };
 		EA053D8208422B1AFE3C8C35 /* Pods_JetDribble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8AE4023A77F47C5E7FF78D /* Pods_JetDribble.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		1F2291DC1F4F6D8100031991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2291BC1F4F6D8100031991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F2291C31F4F6D8100031991;
+			remoteInfo = JetDribble;
+		};
+		1F6ED5901F5F245F00C2ABA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2291BC1F4F6D8100031991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F2291C31F4F6D8100031991;
+			remoteInfo = JetDribble;
+		};
+		1F6ED59E1F6091C900C2ABA2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F2291BC1F4F6D8100031991 /* Project object */;
 			proxyType = 1;
@@ -60,13 +79,24 @@
 		1F2292051F51A42800031991 /* ShotCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotCollectionViewCell.swift; sourceTree = "<group>"; };
 		1F2292081F51C89300031991 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1F5CF6531F51EF7C00788331 /* DribbbleShotsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleShotsCollectionViewController.swift; sourceTree = "<group>"; };
+		1F6ED58B1F5F245E00C2ABA2 /* ShotsProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShotsProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6ED58D1F5F245E00C2ABA2 /* ShotsProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotsProviderTests.swift; sourceTree = "<group>"; };
+		1F6ED58F1F5F245F00C2ABA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6ED5991F6091C900C2ABA2 /* DribbbleAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DribbbleAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6ED59B1F6091C900C2ABA2 /* DribbbleAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DribbbleAPITests.swift; sourceTree = "<group>"; };
+		1F6ED59D1F6091C900C2ABA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F6ED5C41F61CB5C00C2ABA2 /* shots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shots.json; sourceTree = "<group>"; };
+		1F6ED5C61F61D0B500C2ABA2 /* DHURLSessionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHURLSessionMock.swift; sourceTree = "<group>"; };
 		2BB5CEC56E7E5AC4B59B3A46 /* Pods-JetDribble-JetDribbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDribble-JetDribbleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JetDribble-JetDribbleTests/Pods-JetDribble-JetDribbleTests.release.xcconfig"; sourceTree = "<group>"; };
 		2CFEC129371F2849FDF49125 /* Pods-JetDribble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDribble.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JetDribble/Pods-JetDribble.debug.xcconfig"; sourceTree = "<group>"; };
+		3720C96F948D6353E735A9A7 /* Pods-JetDribble-ShotsProviderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDribble-ShotsProviderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JetDribble-ShotsProviderTests/Pods-JetDribble-ShotsProviderTests.release.xcconfig"; sourceTree = "<group>"; };
 		428DBF29334E1D3078F50802 /* Pods-JetDribble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDribble.release.xcconfig"; path = "Pods/Target Support Files/Pods-JetDribble/Pods-JetDribble.release.xcconfig"; sourceTree = "<group>"; };
 		7946FE71A09E1E737A116A81 /* Pods_JetDribbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDribbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DA82F0853EC587E3D2DF286 /* Pods-JetDribble-ShotsProviderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDribble-ShotsProviderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JetDribble-ShotsProviderTests/Pods-JetDribble-ShotsProviderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		830A1E3E52CB117894B5F826 /* Pods-JetDribble-JetDribbleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDribble-JetDribbleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JetDribble-JetDribbleTests/Pods-JetDribble-JetDribbleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		969F2C464FDFC63DA42DBC79 /* Pods-JetDribbleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JetDribbleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JetDribbleTests/Pods-JetDribbleTests.release.xcconfig"; sourceTree = "<group>"; };
 		A1A547BB0831385BF792D82F /* Pods_JetDribble_JetDribbleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDribble_JetDribbleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4552235A2C991FBAD6512CA /* Pods_JetDribble_ShotsProviderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDribble_ShotsProviderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8AE4023A77F47C5E7FF78D /* Pods_JetDribble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JetDribble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +118,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F6ED5881F5F245E00C2ABA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98954E717ADD63BB06AD99B9 /* Pods_JetDribble_ShotsProviderTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6ED5961F6091C900C2ABA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +141,8 @@
 			children = (
 				1F2291C61F4F6D8100031991 /* JetDribble */,
 				1F2291DE1F4F6D8100031991 /* JetDribbleTests */,
+				1F6ED58C1F5F245E00C2ABA2 /* ShotsProviderTests */,
+				1F6ED59A1F6091C900C2ABA2 /* DribbbleAPITests */,
 				1F2291C51F4F6D8100031991 /* Products */,
 				DB1249E4E4770EFC795C624F /* Pods */,
 				7A334187F10A3868C4787683 /* Frameworks */,
@@ -107,6 +154,8 @@
 			children = (
 				1F2291C41F4F6D8100031991 /* JetDribble.app */,
 				1F2291DB1F4F6D8100031991 /* JetDribbleTests.xctest */,
+				1F6ED58B1F5F245E00C2ABA2 /* ShotsProviderTests.xctest */,
+				1F6ED5991F6091C900C2ABA2 /* DribbbleAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +185,7 @@
 		1F2291EA1F4F6DA500031991 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				1F6ED5C61F61D0B500C2ABA2 /* DHURLSessionMock.swift */,
 				1F2291F81F50C5A200031991 /* Config.swift */,
 				1F2291C71F4F6D8100031991 /* AppDelegate.swift */,
 				1F2291D11F4F6D8100031991 /* Assets.xcassets */,
@@ -191,12 +241,32 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		1F6ED58C1F5F245E00C2ABA2 /* ShotsProviderTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F6ED58D1F5F245E00C2ABA2 /* ShotsProviderTests.swift */,
+				1F6ED5C41F61CB5C00C2ABA2 /* shots.json */,
+				1F6ED58F1F5F245F00C2ABA2 /* Info.plist */,
+			);
+			path = ShotsProviderTests;
+			sourceTree = "<group>";
+		};
+		1F6ED59A1F6091C900C2ABA2 /* DribbbleAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F6ED59B1F6091C900C2ABA2 /* DribbbleAPITests.swift */,
+				1F6ED59D1F6091C900C2ABA2 /* Info.plist */,
+			);
+			path = DribbbleAPITests;
+			sourceTree = "<group>";
+		};
 		7A334187F10A3868C4787683 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				CD8AE4023A77F47C5E7FF78D /* Pods_JetDribble.framework */,
 				7946FE71A09E1E737A116A81 /* Pods_JetDribbleTests.framework */,
 				A1A547BB0831385BF792D82F /* Pods_JetDribble_JetDribbleTests.framework */,
+				A4552235A2C991FBAD6512CA /* Pods_JetDribble_ShotsProviderTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -210,6 +280,8 @@
 				969F2C464FDFC63DA42DBC79 /* Pods-JetDribbleTests.release.xcconfig */,
 				830A1E3E52CB117894B5F826 /* Pods-JetDribble-JetDribbleTests.debug.xcconfig */,
 				2BB5CEC56E7E5AC4B59B3A46 /* Pods-JetDribble-JetDribbleTests.release.xcconfig */,
+				7DA82F0853EC587E3D2DF286 /* Pods-JetDribble-ShotsProviderTests.debug.xcconfig */,
+				3720C96F948D6353E735A9A7 /* Pods-JetDribble-ShotsProviderTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -258,6 +330,45 @@
 			productReference = 1F2291DB1F4F6D8100031991 /* JetDribbleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1F6ED58A1F5F245E00C2ABA2 /* ShotsProviderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6ED5941F5F245F00C2ABA2 /* Build configuration list for PBXNativeTarget "ShotsProviderTests" */;
+			buildPhases = (
+				19A615336EEAA337D4FBBD0E /* [CP] Check Pods Manifest.lock */,
+				1F6ED5871F5F245E00C2ABA2 /* Sources */,
+				1F6ED5881F5F245E00C2ABA2 /* Frameworks */,
+				1F6ED5891F5F245E00C2ABA2 /* Resources */,
+				FC92A05F93E84547BCC2D190 /* [CP] Embed Pods Frameworks */,
+				7F924CAB21577A0B41334F33 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6ED5911F5F245F00C2ABA2 /* PBXTargetDependency */,
+			);
+			name = ShotsProviderTests;
+			productName = ShotsProviderTests;
+			productReference = 1F6ED58B1F5F245E00C2ABA2 /* ShotsProviderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F6ED5981F6091C900C2ABA2 /* DribbbleAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F6ED5A21F6091C900C2ABA2 /* Build configuration list for PBXNativeTarget "DribbbleAPITests" */;
+			buildPhases = (
+				1F6ED5951F6091C900C2ABA2 /* Sources */,
+				1F6ED5961F6091C900C2ABA2 /* Frameworks */,
+				1F6ED5971F6091C900C2ABA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F6ED59F1F6091C900C2ABA2 /* PBXTargetDependency */,
+			);
+			name = DribbbleAPITests;
+			productName = DribbbleAPITests;
+			productReference = 1F6ED5991F6091C900C2ABA2 /* DribbbleAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -274,6 +385,18 @@
 						ProvisioningStyle = Automatic;
 					};
 					1F2291DA1F4F6D8100031991 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9LU8U6NNWA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F2291C31F4F6D8100031991;
+					};
+					1F6ED58A1F5F245E00C2ABA2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9LU8U6NNWA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F2291C31F4F6D8100031991;
+					};
+					1F6ED5981F6091C900C2ABA2 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 9LU8U6NNWA;
 						ProvisioningStyle = Automatic;
@@ -296,6 +419,8 @@
 			targets = (
 				1F2291C31F4F6D8100031991 /* JetDribble */,
 				1F2291DA1F4F6D8100031991 /* JetDribbleTests */,
+				1F6ED58A1F5F245E00C2ABA2 /* ShotsProviderTests */,
+				1F6ED5981F6091C900C2ABA2 /* DribbbleAPITests */,
 			);
 		};
 /* End PBXProject section */
@@ -318,6 +443,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F6ED5891F5F245E00C2ABA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6ED5C51F61CB5C00C2ABA2 /* shots.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6ED5971F6091C900C2ABA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -334,6 +474,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JetDribble-JetDribbleTests/Pods-JetDribble-JetDribbleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		19A615336EEAA337D4FBBD0E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		1D6B9A4342C7F6CFE6A4AF34 /* [CP] Check Pods Manifest.lock */ = {
@@ -364,6 +519,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JetDribble-JetDribbleTests/Pods-JetDribble-JetDribbleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F924CAB21577A0B41334F33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JetDribble-ShotsProviderTests/Pods-JetDribble-ShotsProviderTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8823D60770AC780DF1D663E6 /* [CP] Check Pods Manifest.lock */ = {
@@ -411,6 +581,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JetDribble/Pods-JetDribble-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FC92A05F93E84547BCC2D190 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JetDribble-ShotsProviderTests/Pods-JetDribble-ShotsProviderTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -430,6 +615,7 @@
 				1F2291F91F50C5A200031991 /* Config.swift in Sources */,
 				1F2291C81F4F6D8100031991 /* AppDelegate.swift in Sources */,
 				1F2291EF1F50067300031991 /* JetDribbleViewController.swift in Sources */,
+				1F6ED5C71F61D0B500C2ABA2 /* DHURLSessionMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +627,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F6ED5871F5F245E00C2ABA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6ED58E1F5F245E00C2ABA2 /* ShotsProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F6ED5951F6091C900C2ABA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6ED59C1F6091C900C2ABA2 /* DribbbleAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -448,6 +650,16 @@
 			isa = PBXTargetDependency;
 			target = 1F2291C31F4F6D8100031991 /* JetDribble */;
 			targetProxy = 1F2291DC1F4F6D8100031991 /* PBXContainerItemProxy */;
+		};
+		1F6ED5911F5F245F00C2ABA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F2291C31F4F6D8100031991 /* JetDribble */;
+			targetProxy = 1F6ED5901F5F245F00C2ABA2 /* PBXContainerItemProxy */;
+		};
+		1F6ED59F1F6091C900C2ABA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F2291C31F4F6D8100031991 /* JetDribble */;
+			targetProxy = 1F6ED59E1F6091C900C2ABA2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -598,6 +810,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 9LU8U6NNWA;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				INFOPLIST_FILE = JetDribbleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilazarev.JetDribbleTests;
@@ -613,9 +826,68 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 9LU8U6NNWA;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				INFOPLIST_FILE = JetDribbleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilazarev.JetDribbleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JetDribble.app/JetDribble";
+			};
+			name = Release;
+		};
+		1F6ED5921F5F245F00C2ABA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DA82F0853EC587E3D2DF286 /* Pods-JetDribble-ShotsProviderTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9LU8U6NNWA;
+				INFOPLIST_FILE = ShotsProviderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilazarev.ShotsProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JetDribble.app/JetDribble";
+			};
+			name = Debug;
+		};
+		1F6ED5931F5F245F00C2ABA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3720C96F948D6353E735A9A7 /* Pods-JetDribble-ShotsProviderTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9LU8U6NNWA;
+				INFOPLIST_FILE = ShotsProviderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilazarev.ShotsProviderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JetDribble.app/JetDribble";
+			};
+			name = Release;
+		};
+		1F6ED5A01F6091C900C2ABA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9LU8U6NNWA;
+				INFOPLIST_FILE = DribbbleAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilazarev.DribbbleAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JetDribble.app/JetDribble";
+			};
+			name = Debug;
+		};
+		1F6ED5A11F6091C900C2ABA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9LU8U6NNWA;
+				INFOPLIST_FILE = DribbbleAPITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilazarev.DribbbleAPITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JetDribble.app/JetDribble";
@@ -648,6 +920,24 @@
 			buildConfigurations = (
 				1F2291E81F4F6D8100031991 /* Debug */,
 				1F2291E91F4F6D8100031991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6ED5941F5F245F00C2ABA2 /* Build configuration list for PBXNativeTarget "ShotsProviderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6ED5921F5F245F00C2ABA2 /* Debug */,
+				1F6ED5931F5F245F00C2ABA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F6ED5A21F6091C900C2ABA2 /* Build configuration list for PBXNativeTarget "DribbbleAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6ED5A01F6091C900C2ABA2 /* Debug */,
+				1F6ED5A11F6091C900C2ABA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -15,5 +15,11 @@ target 'JetDribble' do
     pod 'SwiftyJSON'
     pod 'SDWebImage', '~> 4.0'
   end
+  
+  target 'ShotsProviderTests' do
+      # Pods for testing
+      pod 'SwiftyJSON'
+      pod 'SDWebImage', '~> 4.0'
+  end
 
 end
