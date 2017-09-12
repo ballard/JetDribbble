@@ -19,12 +19,11 @@ struct Shot {
     var animated : Bool
     
     init(json : JSON) {
-        
         identifier = json["id"].doubleValue
         title = json["title"].stringValue
         details = json["description"].stringValue
         updated = json["updated_at"].stringValue
-        images = Images.init(json: json["images"].dictionaryObject!)
+        images = Images.init(json: json["images"])
         animated = json["animated"].boolValue
     }
 }
